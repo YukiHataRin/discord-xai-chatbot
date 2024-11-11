@@ -5,10 +5,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 MODEL = os.getenv('MODEL')
+XAI_API_KEY = os.getenv('XAI_API_KEY')
 
 class ChatBot:
     def __init__(self):
-        self.client = OpenAI()
+        self.client = OpenAI(
+        api_key=XAI_API_KEY,
+        base_url="https://api.x.ai/v1",
+        )
         self.json_template_for_user = {
             "prompt":"你是一個富有人性，講話幽默的聊天機器人，使用繁體中文回答", 
             "translate":False,
