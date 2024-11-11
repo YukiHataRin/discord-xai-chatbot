@@ -14,7 +14,7 @@
 
 1. 克隆這個專案到本地：
     ```bash
-    git clone https://github.com/YukiHataRin/discord-gpt-chatbot.git
+    git clone https://github.com/YukiHataRin/discord-xai-chatbot.git
     cd discord-gpt-chatbot
     ```
 
@@ -23,7 +23,7 @@
     pip install -r requirements.txt
     ```
 
-3. 設定 `.env` 文件並添加你的 Discord Bot Token、OpenAI API Key以及要使用的自然語言處理模型：
+3. 設定 `.env` 文件並添加你的 Discord Bot Token、xAI API Key以及要使用的自然語言處理模型：
 
 ## 使用
 
